@@ -1,0 +1,432 @@
+/* Reset default browser margins */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header/Logo Container */
+.header-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    background-color: #ffffff;
+}
+
+.logo-container {
+    text-align: center;
+}
+
+.brand-text {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0d1b3e; /* Deep navy blue */
+    letter-spacing: -1px;
+}
+
+.brand-text span {
+    color: #f2a900; /* Golden yellow */
+}
+
+.sub-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 2px;
+    margin-top: 2px;
+    border-top: 2px solid #000;
+    display: inline-block;
+    padding-top: 2px;
+}
+
+/* Red Promo Bar */
+.promo-bar {
+    background-color: #e31b23; /* Vibrant Red */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    font-weight: 900;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.star {
+    margin: 0 8px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 600px) {
+    .promo-bar {
+        font-size: 1.1rem;
+        padding: 12px 5px;
+    }
+    .brand-text {
+        font-size: 26px;
+    }
+}
+.logo-container img{
+    width: 100%;
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    height: 700px; /* Adjust based on preference */
+    /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('images/winter_img.png') no-repeat center center/cover;*/
+    background-image: url('images/winter_img.png');            
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Zip Form Styles */
+.zip-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.input-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.zip-form input {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn-next {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f9a000; /* Matching the orange/gold button */
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px; /* Pill shape from image */
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn-next:hover {
+    background-color: #e08f00;
+}
+
+/* Responsive adjustments for Hero */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .hero {
+        height: 400px;
+    }
+}
+/* Trust Bar Styles */
+.trust-bar {
+    background-color: #1c1f55; /* Deep Navy Blue */
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header with lines on sides */
+.trust-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.trust-label {
+    padding: 0 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    max-width: 300px; /* Limits line width on wide screens */
+}
+
+/* Logo Alignment */
+.logo-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.logo-grid img {
+    height: 35px; /* Adjust based on your specific logo files */
+    width: auto;
+    filter: brightness(0) invert(1); /* Makes colored logos pure white */
+    opacity: 0.9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .logo-grid {
+        justify-content: center;
+    }
+    
+    .logo-grid img {
+        height: 25px;
+    }
+}
+.seen-on{
+    width: 100%;
+}
+
+/* Awards Headline Styles */
+.awards-headline {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.main-title {
+    color: #f2a900; /* Matching the golden yellow from previous sections */
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.sub-title {
+    color: #0d1b3e; /* Deep navy blue */
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .awards-headline {
+        padding: 40px 15px;
+    }
+    
+    .main-title {
+        font-size: 1.6rem;
+    }
+    
+    .sub-title {
+        font-size: 1.1rem;
+    }
+}
+/* Features Section Styles */
+.features {
+    background-color: #f9f9f9; /* Light grey background to separate from headline */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.features-intro {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.features-intro h2 {
+    color: #0d1b3e;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.features-intro p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* Three-column grid */
+.features-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-icon {
+    width: 150px; /* Large icons like the image */
+    height: 150px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: auto;
+    /* Optional: If your icons aren't navy, this filter makes them navy */
+    /* filter: invert(11%) sepia(34%) saturate(3474%) hue-rotate(212deg) brightness(91%) contrast(101%); */
+}
+
+.feature-item h3 {
+    color: #0d1b3e;
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .features-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature-item {
+        margin-bottom: 40px;
+    }
+}
+/* Bottom CTA Bar Styles */
+.cta-bar {
+    background-color: #0d1b3e; /* Deep Navy Blue */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cta-bar h2 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-quote {
+    display: inline-block;
+    background-color: #f2a900; /* Vibrant Orange/Yellow */
+    color: #ffffff;
+    padding: 18px 60px;
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-decoration: none;
+    border-radius: 50px; /* Pill shape */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btn-quote:hover {
+    background-color: #e08f00;
+    transform: scale(1.05); /* Slight pop effect on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .cta-bar h2 {
+        font-size: 1.5rem;
+    }
+    
+    .btn-quote {
+        font-size: 1.4rem;
+        padding: 15px 40px;
+        width: 80%; /* Makes button larger on mobile for easier tapping */
+    }
+}
+
+/* Footer Styles */
+.site-footer {
+    font-family: Arial, sans-serif;
+}
+
+.footer-legal {
+    background-color: #ffffff;
+    padding: 40px 0;
+    color: #666;
+    font-size: 0.75rem; /* Small legal print */
+    line-height: 1.5;
+    text-align: center;
+}
+
+.footer-legal p {
+    margin-bottom: 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 12px;
+    line-height: 13px;
+}
+
+.footer-bottom {
+    background-color: #0d1b3e; /* Matching the Navy brand color */
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+}
+
+.footer-bottom a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure the text doesn't hit the edges on mobile */
+@media (max-width: 600px) {
+    .footer-legal, .footer-bottom {
+        padding: 20px 15px;
+    }
+}
